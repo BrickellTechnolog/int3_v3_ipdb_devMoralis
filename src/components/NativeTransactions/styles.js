@@ -8,7 +8,7 @@ const styles = {
     display: "flex",
     background: "#FFFFFF",
     boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.25)",
-    border: "2px solid #e7eaf3",
+    border: "2px solid #F500D0",
     borderRadius: "15px",
     marginBottom: "20px",
   },

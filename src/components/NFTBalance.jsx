@@ -18,7 +18,9 @@ const styles = {
     maxWidth: "1000px",
     width: "100%",
     gap: "10px",
+    background: "#0B0B0B"
   },
+
 };
 
 function NFTBalance() {
@@ -66,8 +68,8 @@ function NFTBalance() {
 
   console.log("NFTBalances", NFTBalances);
   return (
-    <div style={{ padding: "15px", maxWidth: "1030px", width: "100%" }}>
-      <h1>🖼 NFT Balances</h1>
+    <div style={{ padding: "15px", maxWidth: "1030px", width: "100%", background: "#0B0B0B" }}>
+      <h1>🖼️ Your NFT Gallary</h1>
       <div style={styles.NFTs}>
         <Skeleton loading={!NFTBalances?.result}>
           {NFTBalances?.result &&
@@ -78,19 +80,19 @@ function NFTBalance() {
                 <Card
                   hoverable
                   actions={[
-                    <Tooltip title="View On Blockexplorer">
-                      <FileSearchOutlined
-                        onClick={() => window.open(`${getExplorer(chainId)}address/${nft.token_address}`, "_blank")}
+                    <Tooltip title="View On Blockexplorer" >
+                      <FileSearchOutlined style={{ fontSize: '16px', color: '#F500D0' }} 
+                        onClick={() => window.open(`${getExplorer(chainId)}address/${nft.token_address}`, "_blank"  )}
                       />
                     </Tooltip>,
                     <Tooltip title="Transfer NFT">
-                      <SendOutlined onClick={() => handleTransferClick(nft)} />
+                      <SendOutlined style={{ fontSize: '16px', color: '#F500D0' }}  onClick={() => handleTransferClick(nft)} />
                     </Tooltip>,
-                    <Tooltip title="Sell On OpenSea">
-                      <ShoppingCartOutlined onClick={() => alert("OPENSEA INTEGRATION COMING!")} />
+                    <Tooltip title="Sell On IPMP">
+                      <ShoppingCartOutlined style={{ fontSize: '16px', color: '#F500D0' }}  onClick={() => alert("IPMP INTEGRATION COMING!")} />
                     </Tooltip>,
                   ]}
-                  style={{ width: 240, border: "2px solid #e7eaf3" }}
+                  style={{ width: 240, background: "#A9F27F", border: "1px solid #F500D0" }}
                   cover={
                     <Image
                       preview={false}

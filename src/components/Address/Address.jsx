@@ -71,7 +71,7 @@ const Check = () => (
     height="24"
     viewBox="0 0 24 24"
     strokeWidth="3"
-    stroke="#21BF96"
+    stroke="#F500D0"
     fill="none"
     strokeLinecap="round"
     strokeLinejoin="round"

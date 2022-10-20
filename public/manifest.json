@@ -1,6 +1,6 @@
 {
-    "short_name": "Ethereum Boilerplate",
-    "name": "Ethereum Boilerplate",
+    "short_name": "Int3rPlanetary",
+    "name": "Int3rPlanetary",
     "icons": [
         {
             "src": "favicon.ico",
@@ -24,5 +24,5 @@
     "start_url": "/",
     "display": "standalone",
     "theme_color": "#000000",
-    "background_color": "#ffffff"
+    "background_color": "#000"
 }

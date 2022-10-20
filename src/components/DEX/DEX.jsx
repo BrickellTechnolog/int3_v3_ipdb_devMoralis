@@ -14,7 +14,7 @@ const styles = {
   card: {
     width: "430px",
     boxShadow: "0 0.5rem 1.2rem rgb(189 197 209 / 20%)",
-    border: "1px solid #e7eaf3",
+    border: "2px solid #F500D0",
     borderRadius: "1rem",
     fontSize: "16px",
     fontWeight: "500",

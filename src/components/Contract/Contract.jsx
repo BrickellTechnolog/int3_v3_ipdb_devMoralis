@@ -55,7 +55,7 @@ export default function Contract() {
         style={{
           width: "60%",
           boxShadow: "0 0.5rem 1.2rem rgb(189 197 209 / 20%)",
-          border: "1px solid #e7eaf3",
+          border: "1px solid #000",
           borderRadius: "0.5rem",
         }}
       >
@@ -123,7 +123,7 @@ export default function Contract() {
         style={{
           width: "40%",
           boxShadow: "0 0.5rem 1.2rem rgb(189 197 209 / 20%)",
-          border: "1px solid #e7eaf3",
+          border: "1px solid #000",
           borderRadius: "0.5rem",
         }}
       >

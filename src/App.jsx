@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useMoralis } from "react-moralis";
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Switch,
   Route,
   Redirect,
@@ -16,37 +16,42 @@ import Wallet from "components/Wallet";
 import { Layout, Tabs } from "antd";
 import "antd/dist/antd.less";
 import "./style.less";
-import Gamify from "components/Gamify";
-import Contract from "components/Contract/Contract";
+import Gamify from "components/Dashboard";
 import Ramper from "components/Ramper";
 import MenuItems from "./components/MenuItems";
 import logo from "Logo.png";
-import { TrophyFilled, GiftFilled, FireFilled } from "@ant-design/icons";
+import Shop from "components/Shop/shop";
+import Chains from "components/Chains";
+import Gigs from './components/Gigs/gigs';
+
+
+
 const { Header } = Layout;
+
 
 const styles = {
   content: {
     display: "flex",
     justifyContent: "center",
     fontFamily: "Roboto, sans-serif",
-    color: "#041836",
-    marginTop: "130px",
-    padding: "10px",
+    color: "#000",
+    marginTop: "100px",
+    padding: "1px",
   },
   header: {
     position: "fixed",
     zIndex: 1,
     width: "100%",
-    //background: "#fff",
+    background: "#000",
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
     fontFamily: "Roboto, sans-serif",
     borderBottom: "2px solid rgba(0, 0, 0, 0.06)",
     padding: "0 10px",
-    boxShadow: "0 1px 10px rgb(151 164 175 / 10%)",
+    boxShadow: "0 4px 10px rgb(151 164 175 / 10%)",
   },
-  headerRight: {
+  headerRight: { 
     display: "flex",
     gap: "20px",
     alignItems: "center",
@@ -68,41 +73,50 @@ const App = ({ isServerInfo }) => {
   return (
     <Layout
       style={{
-        height: "100vh",
+        height: "103vh",
         overflow: "auto",
-        background: "linear-gradient(#172430, #001529)",
+        background: "#0B0B0B", //background
       }}
     >
       <Router>
         <Header theme="dark" style={styles.header}>
-          <img src={logo} alt="" style={{ width: "48px" }}></img>
-          <MenuItems />
+        <img src={logo} alt="" style={{ marginLeft: "15px", marginRight: "55px", width: "60px" }}></img>
+        <Account />
+        <MenuItems />
           <div style={styles.headerRight}>
-            <TokenPrice
-              address="0x1f9840a85d5af5bf1d1762f925bdaddc4201f984"
-              chain="eth"
-              image="https://cloudflare-ipfs.com/ipfs/QmXttGpZrECX5qCyXbBQiqgQNytVGeZW5Anewvh2jc4psg/"
-              size="40px"
-            />
-            <Account />
+          <Chains />    
           </div>
         </Header>
 
         <div style={styles.content}>
           <Switch>
-            <Route exact path="/gamify">
+            <Route exact path="/dashboard">
               <Tabs
                 defaultActiveKey="1"
-                tabPosition="left"
-              >
-                <Tabs.TabPane tab={<span><FireFilled />My Runes</span>} key="1">
+                tabPosition="left">
+                <Tabs.TabPane tab={<span>🏠 Home</span>} key="1">
+                  <Gamify tab="home" />
+                </Tabs.TabPane>
+                <Tabs.TabPane tab={<span>🏠 Social</span>} key="2">
+                  <Gamify tab="social" />
+                </Tabs.TabPane>
+                <Tabs.TabPane tab={<span>🏠 Shop</span>} key="3">
+                  <Gamify tab="shop" />
+                </Tabs.TabPane>
+                <Tabs.TabPane tab={<span>🗳️ Vote</span>} key="4">
+                  <Gamify tab="ipvs" />
+                </Tabs.TabPane>
+                <Tabs.TabPane tab={<span>🔥 Collect</span>} key="5">
                   <Gamify tab="runes" />
                 </Tabs.TabPane>
-                <Tabs.TabPane tab={<span><TrophyFilled /> Leaderboard</span>} key="2">
+                <Tabs.TabPane tab={<span>🏆 Leaderboard</span>} key="6">
                   <Gamify tab="leaderboard" />
                 </Tabs.TabPane>
-                <Tabs.TabPane tab={<span><GiftFilled /> Rewards</span>} key="3">
+                <Tabs.TabPane tab={<span>🎁 Rewards</span>} key="7">
                   <Gamify tab="rewards" />
+                </Tabs.TabPane>
+                <Tabs.TabPane tab={<span>❤️ Donate</span>} key="8">
+                  <Gamify tab="donate" />
                 </Tabs.TabPane>
               </Tabs>
             </Route>
@@ -133,15 +147,18 @@ const App = ({ isServerInfo }) => {
             </Route>
             <Route path="/nftBalance">
               <NFTBalance />
+              </Route>
+            <Route path="/shop">
+              <Shop />
             </Route>
-            <Route path="/contract">
-              <Contract />
+            <Route path="/gigs">
+              <Gigs />
             </Route>
             <Route path="/">
-              <Redirect to="/gamify" />
+              <Redirect to="/dashboard" />
             </Route>
             <Route path="/ethereum-boilerplate">
-              <Redirect to="/gamify" />
+              <Redirect to="/dashboard" />
             </Route>
             <Route path="/nonauthenticated">
               <>Please login using the "Authenticate" button</>

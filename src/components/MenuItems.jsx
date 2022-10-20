@@ -14,12 +14,13 @@ function MenuItems() {
         fontSize: "17px",
         fontWeight: "500",
         width: "100%",
-        justifyContent: "center",
+        justifyContent: "left",
+        marginLeft: "5%",
       }}
       defaultSelectedKeys={[pathname]}
     >
-      <Menu.Item key="/gamify">
-        <NavLink to="/gamify">🚀 Gamify</NavLink>
+      <Menu.Item key="/dashboard">
+        <NavLink to="/dashboard">🚀 Dashboard</NavLink>
       </Menu.Item>
       <Menu.Item key="/wallet">
         <NavLink to="/wallet">👛 Wallet</NavLink>
@@ -31,16 +32,13 @@ function MenuItems() {
         <NavLink to="/onramp">💵 Fiat</NavLink>
       </Menu.Item>
       <Menu.Item key="/erc20balance">
-        <NavLink to="/erc20balance">💰 Balances</NavLink>
+        <NavLink to="/erc20balance">🏧 Balances</NavLink>
       </Menu.Item>
       <Menu.Item key="/erc20transfers">
         <NavLink to="/erc20transfers">💸 Transfers</NavLink>
       </Menu.Item>
       <Menu.Item key="/nftBalance">
-        <NavLink to="/nftBalance">🖼 NFTs</NavLink>
-      </Menu.Item>
-      <Menu.Item key="/contract">
-        <NavLink to="/contract">📄 Contract</NavLink>
+        <NavLink to="/nftBalance">🖼️️ NFTs</NavLink>
       </Menu.Item>
     </Menu>
   );

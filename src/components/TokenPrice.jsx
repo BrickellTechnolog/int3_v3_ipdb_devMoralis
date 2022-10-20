@@ -19,7 +19,7 @@ function TokenPrice() {
     <div style={styles.token}>
       <FireFilled />
       <span >
-        Runes
+        ARTSN
       </span>
     </div>
   );

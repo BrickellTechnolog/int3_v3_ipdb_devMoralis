@@ -4,7 +4,7 @@ import App from "./App";
 import { MoralisProvider } from "react-moralis";
 import "./index.css";
 import * as serviceWorkerRegistration from "./serviceWorkerRegistration";
-import Gamify from "components/Gamify";
+import Gamify from "components/Dashboard";
 
 /** Get your free Moralis Account https://moralis.io/ */
 

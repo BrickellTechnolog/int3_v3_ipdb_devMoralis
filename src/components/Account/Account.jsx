@@ -17,11 +17,11 @@ const styles = {
     alignItems: "center",
     width: "fit-content",
     borderRadius: "12px",
-    border: "solid 2px white",
+    border: "solid 2px #F403C4",
     cursor: "pointer",
   },
   text: {
-    color: "#21BF96",
+    color: "#fff",
   },
   connector: {
     alignItems: "center",

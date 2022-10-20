@@ -15,52 +15,53 @@ const styles = {
     padding: "0 10px",
   },
   button: {
-    border: "2px solid rgb(231, 234, 243)",
+    border: "2px solid #F500D0",
     borderRadius: "12px",
+    background: "black",
   },
 };
 
 const menuItems = [
-  {
-    key: "0x1",
-    value: "Ethereum",
-    icon: <ETHLogo />,
-  },
-  {
-    key: "0x539",
-    value: "Local Chain",
-    icon: <ETHLogo />,
-  },
-  {
-    key: "0x3",
-    value: "Ropsten Testnet",
-    icon: <ETHLogo />,
-  },
-  {
-    key: "0x4",
-    value: "Rinkeby Testnet",
-    icon: <ETHLogo />,
-  },
-  {
-    key: "0x2a",
-    value: "Kovan Testnet",
-    icon: <ETHLogo />,
-  },
-  {
-    key: "0x5",
-    value: "Goerli Testnet",
-    icon: <ETHLogo />,
-  },
-  {
-    key: "0x38",
-    value: "Binance",
-    icon: <BSCLogo />,
-  },
-  {
-    key: "0x61",
-    value: "Smart Chain Testnet",
-    icon: <BSCLogo />,
-  },
+  // {
+  //   key: "0x1",
+  //   value: "Ethereum",
+  //   icon: <ETHLogo />,
+  // },
+  // {
+  //   key: "0x539",
+  //   value: "Local Chain",
+  //   icon: <ETHLogo />,
+  // },
+  // {
+  //   key: "0x3",
+  //   value: "Ropsten Testnet",
+  //   icon: <ETHLogo />,
+  // },
+  // {
+  //   key: "0x4",
+  //   value: "Rinkeby Testnet",
+  //   icon: <ETHLogo />,
+  // },
+  // {
+  //   key: "0x2a",
+  //   value: "Kovan Testnet",
+  //   icon: <ETHLogo />,
+  // },
+  // {
+  //   key: "0x5",
+  //   value: "Goerli Testnet",
+  //   icon: <ETHLogo />,
+  // },
+  // {
+  //   key: "0x38",
+  //   value: "Binance",
+  //   icon: <BSCLogo />,
+  // },
+  // {
+  //   key: "0x61",
+  //   value: "Smart Chain Testnet",
+  //   icon: <BSCLogo />,
+  // },
   {
     key: "0x89",
     value: "Polygon",
@@ -71,16 +72,16 @@ const menuItems = [
     value: "Mumbai",
     icon: <PolygonLogo />,
   },
-  {
-    key: "0xa86a",
-    value: "Avalanche",
-    icon: <AvaxLogo />,
-  },
-  {
-    key: "0xa869",
-    value: "Avalanche Testnet",
-    icon: <AvaxLogo />,
-  },
+  // {
+  //   key: "0xa86a",
+  //   value: "Avalanche",
+  //   icon: <AvaxLogo />,
+  // },
+  // {
+  //   key: "0xa869",
+  //   value: "Avalanche Testnet",
+  //   icon: <AvaxLogo />,
+  // },
 ];
 
 function Chains() {
