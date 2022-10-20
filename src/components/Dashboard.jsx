@@ -280,7 +280,7 @@ export default function Dashboard({ tab }) {
               Daily DUKL$
             </Title>
             <p style={{ color: "gray" }}>
-              If you visit your InterPlanetary Dashboard everyday you will have the opportunity to receive
+              If you visit your Int3rPlanetary Dashboard everyday you will have the opportunity to receive
               bonus DUKL$!
             </p>
           </div>
