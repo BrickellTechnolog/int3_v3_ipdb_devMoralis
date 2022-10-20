@@ -429,7 +429,7 @@ export default function Dashboard({ tab }) {
   if (tab === "home") {
     return (
       <div style={{ width: "100%" }}>
-        <iframe title="ipnn" src="https://int3rplanetary.org" frameborder="0" scrolling="yes" width="100%" height="2000" align="center" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> </iframe>
+        <iframe title="ipnn" src="https://interplanetarydb.io/" frameborder="0" scrolling="yes" width="100%" height="2000" align="center" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> </iframe>
         <p style={{ width: "50%", color: "lightGrey" }}>
           *The community of the Order of the Artisans is composed of Artisans and their Patrons. The Order defines an Artisan as an individual who utilizes imagination and diligence to create a product of value, e.g. STEAM (Science, Technology, Engineering, Art, and Mathematics).
         </p>
@@ -440,7 +440,7 @@ export default function Dashboard({ tab }) {
   if (tab === "social") {
     return (
       <div style={{ width: "100%" }}>
-        <iframe title="ipnn" src="https://int3rplanetary.org/activity" frameborder="0" scrolling="yes" width="100%" height="2000" align="center" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> </iframe>
+        <iframe title="ipnn" src="https://interplanetarydb.io/activity" frameborder="0" scrolling="yes" width="100%" height="2000" align="center" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> </iframe>
         <p style={{ width: "50%", color: "lightGrey" }}>
           *The community of the Order of the Artisans is composed of Artisans and their Patrons. The Order defines an Artisan as an individual who utilizes imagination and diligence to create a product of value, e.g. STEAM (Science, Technology, Engineering, Art, and Mathematics).
         </p>
