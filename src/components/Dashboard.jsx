@@ -16,7 +16,7 @@ const { Title } = Typography;
 
 const styles = {
   collected: {
-    marginTop: "20px",
+    marginTop: "50px",
     marginBottom: "40px",
     width: "310px",
     height: "150px",
@@ -253,11 +253,11 @@ export default function Dashboard({ tab }) {
 
   if (tab === "runes") {
     return (
-      <div style={{ width: "100%" }}>
+      <div style={{ width: "80%" }}>
         <Title level={2} style={{ color: "white" }}>
           Project: DUKL$
         </Title>
-        <h2 style={{ width: "100%", color: "LightGreen" }}>
+        <h2 style={{ width: "90%", color: "LightGreen" }}>
           Collect DUKL$ and climb the community leader board to be on the drop list!
         </h2>
         <div style={styles.collected}>
@@ -409,29 +409,26 @@ export default function Dashboard({ tab }) {
         <Title level={2} style={{ color: "white" }}>
           DUKL$ Leaderboard
         </Title>
-        <h2 style={{ width: "75%", color: "LightGreen" }}>
+        <h2 style={{ width: "100%", color: "LightGreen" }}>
           Ranking of Patrons with the highest number of DUKL$ accumulated
         </h2>
         {dataSource && (
           <Table
-            style={{ scrolling: "yes", width: "1000px", marginTop: "35px", scrollMarginBottom: "35px" }}
+            style={{ scrolling: "yes", width: "100%", marginTop: "35px", scrollMarginBottom: "35px" }}
             dataSource={dataSource}
             columns={columns}
           />
         )}
-        <p style={{ width: "50%", color: "lightGrey" }}>
-          *The community of the Order of the Artisans is composed of Artisans and their Patrons. The Order defines an Artisan as an individual who utilizes imagination and diligence to create a product of value, e.g. STEAM (Science, Technology, Engineering, Art, and Mathematics).
-        </p>
       </div>
     );
   }
 
   if (tab === "home") {
     return (
-      <div style={{ width: "100%" }}>
-        <iframe title="ipnn" src="https://interplanetarydb.io/" frameborder="0" scrolling="yes" width="100%" height="2000" align="center" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> </iframe>
-        <p style={{ width: "50%", color: "lightGrey" }}>
-          *The community of the Order of the Artisans is composed of Artisans and their Patrons. The Order defines an Artisan as an individual who utilizes imagination and diligence to create a product of value, e.g. STEAM (Science, Technology, Engineering, Art, and Mathematics).
+      <div style={{ width: "90%" }}>
+        <iframe title="ipnn" src="https://interplanetarydb.io/" frameborder="0" scrolling="yes" width="90%" height="750" align="center" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> </iframe>
+        <p style={{ width: "75%", color: "lightGreen" }}>
+          *To access the Int3rPlanetary Dashboard, you must authenticate with a decentralized wallet (for example, Metamask, and Coinbase Wallet are popular options). Please do your own research before deciding which option to use, and we suggest you use a secondary wallet for any crypto transaction in or out of Int3rPlanetary. 
         </p>
       </div>
     );
@@ -440,9 +437,9 @@ export default function Dashboard({ tab }) {
   if (tab === "social") {
     return (
       <div style={{ width: "100%" }}>
-        <iframe title="ipnn" src="https://interplanetarydb.io/activity" frameborder="0" scrolling="yes" width="100%" height="2000" align="center" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> </iframe>
-        <p style={{ width: "50%", color: "lightGrey" }}>
-          *The community of the Order of the Artisans is composed of Artisans and their Patrons. The Order defines an Artisan as an individual who utilizes imagination and diligence to create a product of value, e.g. STEAM (Science, Technology, Engineering, Art, and Mathematics).
+        <iframe title="ipnn" src="https://interplanetarydb.io/activity" frameborder="0" scrolling="yes" width="90%" height="750" align="center" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> </iframe>
+        <p style={{ width: "75%", color: "lightGreen" }}>
+        *The community of the Order of the Artisans is composed of Artisans and their Patrons. The Order defines an Artisan as an individual who utilizes imagination and diligence to create a product of value, e.g. STEAM (Science, Technology, Engineering, Art, and Mathematics).
         </p>
       </div>
     );
@@ -451,9 +448,9 @@ export default function Dashboard({ tab }) {
   if (tab === "shop") {
     return (
       <div style={{ width: "100%" }}>
-        <iframe title="ipnn" src="https://int3rplanetary.nftify.network/" frameborder="0" scrolling="yes" width="100%" height="2000" align="center" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> </iframe>
-        <p style={{ width: "50%", color: "lightGrey" }}>
-          *The community of the Order of the Artisans is composed of Artisans and their Patrons. The Order defines an Artisan as an individual who utilizes imagination and diligence to create a product of value, e.g. STEAM (Science, Technology, Engineering, Art, and Mathematics).
+        <iframe title="ipnn" src="https://int3rplanetary.nftify.network/" frameborder="0" scrolling="yes" width="90%" height="750" align="center" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> </iframe>
+        <p style={{ width: "75%", color: "lightGreen" }}>
+        *The community of the Order of the Artisans is composed of Artisans and their Patrons. The Order defines an Artisan as an individual who utilizes imagination and diligence to create a product of value, e.g. STEAM (Science, Technology, Engineering, Art, and Mathematics).
         </p>
       </div>
     );
@@ -462,8 +459,8 @@ export default function Dashboard({ tab }) {
   if (tab === "ipvs") {
     return (
       <div style={{ width: "100%" }}>
-        <iframe title="ipnn" src="https://9lajklrnh8ur.usemoralis.com/" frameborder="0" scrolling="yes" width="100%" height="2000" align="center" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> </iframe>
-        <p style={{ width: "50%", color: "lightGrey" }}>
+        <iframe title="ipnn" src="https://9lajklrnh8ur.usemoralis.com/" frameborder="0" scrolling="yes" width="90%" height="750" align="center" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> </iframe>
+        <p style={{ width: "75%", color: "lightGreen" }}>
           *The community of the Order of the Artisans is composed of Artisans and their Patrons. The Order defines an Artisan as an individual who utilizes imagination and diligence to create a product of value, e.g. STEAM (Science, Technology, Engineering, Art, and Mathematics).
         </p>
       </div>
@@ -472,7 +469,7 @@ export default function Dashboard({ tab }) {
 
   if (tab === "donate") {
     return (
-      <div style={{ width: "100%" }}>
+      <div style={{ width: "90%" }}>
         <Title level={2} style={{ color: "white" }}>
           Donate to the Order of the Artisans Foundation ✨
         </Title>
@@ -495,18 +492,9 @@ export default function Dashboard({ tab }) {
         <p style={{ width: "100%", color: "#fff" }}>💪 Matic on Polygon via our ArtisanNFT DApp below</p>
         <br>
         </br>
-        <iframe title="ipnn" src="https://artisannft-brickelltechnolog.vercel.app" background= "#000" frameborder="0px" scrolling="yes" width="25%" height="750" align="center" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> </iframe>
+        <iframe title="ipnn" src="https://artisannft-brickelltechnolog.vercel.app" background= "#000" frameborder="0px" scrolling="yes" width="50%" height="750" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> </iframe>
         <br>
         </br>
-        <br>
-        </br>
-        <span style={{ color: "gray" }}>
-          Learn more about the{" "}
-          <a href="https://orderoftheartisans.org/">Order of the Artisans Foundation!</a>
-        </span>
-        <p style={{ width: "50%", color: "lightGrey" }}>
-          *The community of the Order of the Artisans is composed of Artisans and their Patrons. The Order defines an Artisan as an individual who utilizes imagination and diligence to create a product of value, e.g. STEAM (Science, Technology, Engineering, Art, and Mathematics).
-        </p>
       </div>
     );
   }
